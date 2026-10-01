@@ -1,0 +1,6 @@
+# Nothing in this package is sensitive; this file only ignores local editor and OS noise
+# so a clean clone doesn't pick up stray files if someone works inside this folder.
+.DS_Store
+Thumbs.db
+node_modules/
+*.log

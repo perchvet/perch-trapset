@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this test set, please cite it as below."
+title: "Perch trap set: 70 clips that catch AI scribes inventing drug names"
+version: 1.0.0
+date-released: "2026-09-25"
+authors:
+  - name: "Talcoe LLC"
+type: dataset
+license: "CC-BY-4.0"
+repository-code: ""
+abstract: >-
+  A 70-clip blind test set (45 dictations, 25 traps) for checking whether an AI clinical
+  scribe charts a medication that was never dictated. Clips are synthetic text to speech
+  audio built from veterinary dictations written by an author who never saw the matching
+  code. Ships with a generic Node scorer, a corpus file with ground truth per clip, and a
+  full ledger of results from Talcoe LLC's own product, Perch, and one outside comparison
+  run.
+keywords:
+  - veterinary
+  - clinical scribe
+  - speech recognition
+  - hallucination
+  - benchmark
+  - AI safety
