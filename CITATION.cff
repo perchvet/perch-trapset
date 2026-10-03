@@ -6,6 +6,17 @@ date-released: "2026-10-02"
 authors:
   - name: "Talcoe LLC"
 type: dataset
+doi: "10.5281/zenodo.23113470"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23113470"
+    description: "Version 1.0.0"
+  - type: doi
+    value: "10.5281/zenodo.23113469"
+    description: "Every version"
+  - type: url
+    value: "https://huggingface.co/datasets/Talcoe/perch-trapset"
+    description: "Hugging Face mirror"
 license: "CC-BY-4.0"
 repository-code: "https://github.com/perchvet/perch-trapset"
 abstract: >-

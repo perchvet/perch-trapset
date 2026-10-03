@@ -171,7 +171,10 @@ under **CC BY 4.0**. `score.mjs` is licensed under the **MIT License**. Full tex
 ## Citation
 
 See `CITATION.cff`. In short: Talcoe LLC, "Perch trap set: 70 clips that catch AI scribes
-inventing drug names," version 1.0.0, 2026.
+inventing drug names," version 1.0.0, 2026. https://doi.org/10.5281/zenodo.23113470
+
+Archived on Zenodo (every version: https://doi.org/10.5281/zenodo.23113469). The same files are
+also on Hugging Face: https://huggingface.co/datasets/Talcoe/perch-trapset
 
 ---
 
