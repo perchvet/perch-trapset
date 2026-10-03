@@ -2,12 +2,12 @@ cff-version: 1.2.0
 message: "If you use this test set, please cite it as below."
 title: "Perch trap set: 70 clips that catch AI scribes inventing drug names"
 version: 1.0.0
-date-released: "2026-09-25"
+date-released: "2026-10-02"
 authors:
   - name: "Talcoe LLC"
 type: dataset
 license: "CC-BY-4.0"
-repository-code: ""
+repository-code: "https://github.com/perchvet/perch-trapset"
 abstract: >-
   A 70-clip blind test set (45 dictations, 25 traps) for checking whether an AI clinical
   scribe charts a medication that was never dictated. Clips are synthetic text to speech

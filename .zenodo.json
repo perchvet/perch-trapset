@@ -3,7 +3,7 @@
   "upload_type": "dataset",
   "description": "A 70 clip blind test set (45 veterinary dictations, 25 traps) for checking whether an AI clinical scribe charts a medication that was never dictated. Synthetic Kokoro text to speech audio, one voice per clip. Includes ground truth, a dependency free Node scorer, and a per clip ledger of Perch's own run and one outside comparison, with raw counts and no percentage. This is Perch's own test, not an independent study.",
   "version": "1.0.0",
-  "publication_date": "2026-09-25",
+  "publication_date": "2026-10-02",
   "creators": [{"name": "Talcoe LLC"}],
   "license": "cc-by-4.0",
   "keywords": ["veterinary", "clinical scribe", "speech recognition", "hallucination", "benchmark", "AI safety"]
