@@ -56,8 +56,7 @@ Pannaker for Panacur (s030), Serenia for Cerenia (s032), Pyrintel for pyrantel (
 is also a miss of the real name. Perch charted the real name on seven of those eight clips and
 left the eighth (Panacur, heard as "Panaquer") for the vet rather than guess.
 
-**Five of Product C's six dose errors are ten times the dictated dose, on sub milligram
-doses.** "0.02 mg/kg" buprenorphine charted as 0.2 mg/kg three times (s002, s011, s018);
+**All six of Product C's dose errors are ten times the dictated dose.** "0.02 mg/kg" buprenorphine charted as 0.2 mg/kg three times (s002, s011, s018);
 "0.05 mg/kg" meloxicam charted as 0.5 mg/kg (s002); "Adequan 4.4 mg/kg IM" charted as
 "Librela 44 mg/kg intramuscularly" (s003: wrong drug, ten times the dose, and Adequan gone);
 "ondansetron 0.5 mg/kg" charted as "Ondancetrin 5mg/kg" (s027: a drug that does not exist at
