@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this test set, please cite it as below."
-title: "Perch trap set: 70 clips that catch AI scribes inventing drug names"
-version: 1.0.0
-date-released: "2026-10-02"
+title: "Perch trap set: 140 clips that catch AI scribes inventing drug names and doses"
+version: 1.1.0
+date-released: "2026-10-20"
 authors:
   - name: "Talcoe LLC"
 type: dataset

@@ -74,6 +74,16 @@ carries.
   drug name that happens to normalize to the same letters. The ledger in this repo notes where
   that distinction mattered on the one outside run we scored this way.
 
+## Corpus 7, added in v1.1.0
+
+A second blind set of 70 clips, by a different author in registers this set never used, lives
+in `corpus7/` with its own README and ledger. It was run against a second commercial scribe
+(Product C) and adds one measure this file does not have: dose numbers in the note that nobody
+said. Product C charted eight misspelled brands as medications and six doses nobody dictated,
+five of them ten times the dictated dose; Perch charted none of either on the same 50 clips and
+has one false offer of its own on a trap Product C never reached. Counts, clips, and every
+note are in that folder.
+
 ## Results
 
 Raw counts. No percentage appears anywhere in this file, on purpose; see "What this is not"
