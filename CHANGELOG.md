@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased, 2026-10-28
+
+- `ledger.md`: a new "By drug class" section regrouping the root set's 84 dictated drug
+  instances into ten therapeutic classes, with found and missed counts for all four outputs and
+  every missed drug listed by class and clip. Asked for by Ken Perry, MD, on X.
+- `drug-classes.json`: the class for every drug in `corpus.jsonl`.
+- `by-class.mjs`: regenerates that section from the per-clip rows in `ledger.md`
+  (`node by-class.mjs`). No change to any count, clip, or `score.mjs`.
+
 ## 1.1.0, 2026-10-20
 
 - `corpus7/`: a second blind set of 70 clips (45 dictations, 25 traps; ids s001 to s070) by a

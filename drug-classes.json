@@ -1,0 +1,13 @@
+{
+  "_comment": "Therapeutic class for every drug dictated in corpus.jsonl, used by by-class.mjs. Brand and generic names of the same drug share a class. Some drugs have more than one common use (gabapentin for pain and for visit anxiety, prednisolone as an anti-inflammatory and in endocrine disease); each sits in the class named here, and you can move it and rerun.",
+  "Antibiotics": ["Baytril", "enrofloxacin", "Clavamox", "amoxicillin-clavulanate", "Convenia", "amikacin", "cephalexin", "clindamycin", "doxycycline", "metronidazole"],
+  "Antifungals and topical antiseptics": ["itraconazole", "Malaseb", "chlorhexidine"],
+  "Parasite control": ["Bravecto", "Frontline", "Heartgard", "NexGard", "Panacur", "fenbendazole", "ProHeart", "Seresto", "Simparica Trio", "praziquantel", "pyrantel"],
+  "Allergy and itch": ["Apoquel", "oclacitinib", "Atopica", "Cytopoint"],
+  "Pain and arthritis": ["Rimadyl", "carprofen", "meloxicam", "Galliprant", "Librela", "Adequan"],
+  "Opioids, sedatives and anesthetics": ["Simbadol", "buprenorphine", "butorphanol", "dexmedetomidine", "ketamine", "isoflurane"],
+  "Neurology and behavior": ["levetiracetam", "phenobarbital", "gabapentin", "trazodone"],
+  "Gastrointestinal and appetite": ["Cerenia", "maropitant", "ondansetron", "famotidine", "omeprazole", "Entyce", "mirtazapine"],
+  "Cardiology": ["Vetmedin", "pimobendan", "furosemide", "enalapril", "atenolol"],
+  "Endocrine and corticosteroids": ["Vetsulin", "methimazole", "Zycortal", "prednisolone"]
+}

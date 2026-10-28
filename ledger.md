@@ -153,3 +153,35 @@ Neither of these is folded into the totals table above, because neither happened
 run. They are recorded here at the same prominence as Product B's Roflexacin and NexGard
 findings because a test set that only publishes a competitor's misses is a sales document. This
 one publishes its own.
+
+## By drug class
+
+The same 84 dictated drug instances as the table at the top, regrouped by therapeutic class. Nothing is rescored: `by-class.mjs` reads the per-clip rows above and `drug-classes.json` says which class each drug belongs to. A brand and its generic share a class, and each one counts as its own instance, so a clip that says "Baytril, enrofloxacin" adds two antibiotics. A few drugs have more than one common use (gabapentin for pain and for visit anxiety, prednisolone as an anti-inflammatory and in endocrine disease); each sits in one class, and moving it in `drug-classes.json` and running `node by-class.mjs` gives the other grouping. False offers are names that were never said, so they have no class; both appear in the per-clip table above.
+
+The classes are small, between 3 and 13 instances each. They show where the misses fell on this set, and they are too small to stand as a rate for any class.
+
+| drug class | dictated drug instances | Product B: transcript | Product B: SOAP | Perch: configuration A | Perch: configuration B |
+|---|---|---|---|---|---|
+| Gastrointestinal and appetite | 13 | 5 found, 8 missed | 11 found, 2 missed | 12 found, 1 missed | 12 found, 1 missed |
+| Antibiotics | 12 | 7 found, 5 missed | 10 found, 2 missed | 10 found, 2 missed | 11 found, 1 missed |
+| Parasite control | 12 | 8 found, 4 missed | 12 found, 0 missed | 7 found, 5 missed | 12 found, 0 missed |
+| Allergy and itch | 9 | 1 found, 8 missed | 7 found, 2 missed | 8 found, 1 missed | 7 found, 2 missed |
+| Pain and arthritis | 9 | 5 found, 4 missed | 8 found, 1 missed | 8 found, 1 missed | 9 found, 0 missed |
+| Cardiology | 9 | 7 found, 2 missed | 9 found, 0 missed | 8 found, 1 missed | 8 found, 1 missed |
+| Opioids, sedatives and anesthetics | 7 | 5 found, 2 missed | 6 found, 1 missed | 6 found, 1 missed | 6 found, 1 missed |
+| Neurology and behavior | 5 | 4 found, 1 missed | 5 found, 0 missed | 5 found, 0 missed | 5 found, 0 missed |
+| Endocrine and corticosteroids | 5 | 3 found, 2 missed | 5 found, 0 missed | 5 found, 0 missed | 5 found, 0 missed |
+| Antifungals and topical antiseptics | 3 | 2 found, 1 missed | 2 found, 1 missed | 2 found, 1 missed | 3 found, 0 missed |
+
+Missed drugs, by class and output (clip id in brackets):
+
+- **Gastrointestinal and appetite.** Product B: transcript: maropitant (f002), famotidine (f002), maropitant (f010), maropitant (f013), famotidine (f022), omeprazole (f027), ondansetron (f039), Entyce (f041). Product B: SOAP: Cerenia (f013), Entyce (f041). Perch: configuration A: Entyce (f041). Perch: configuration B: Entyce (f041).
+- **Antibiotics.** Product B: transcript: Baytril (f004), enrofloxacin (f004), Clavamox (f014), cephalexin (f036), amikacin (f039). Product B: SOAP: enrofloxacin (f004), Clavamox (f005). Perch: configuration A: Baytril (f004), cephalexin (f036). Perch: configuration B: Baytril (f004).
+- **Parasite control.** Product B: transcript: pyrantel (f007), Simparica Trio (f015), praziquantel (f031), Heartgard (f042). Perch: configuration A: pyrantel (f007), Seresto (f009), Bravecto (f015), NexGard (f015), Simparica Trio (f015).
+- **Allergy and itch.** Product B: transcript: Apoquel (f001), oclacitinib (f001), Apoquel (f009), oclacitinib (f009), Apoquel (f016), Apoquel (f032), Atopica (f044), Apoquel (f060). Product B: SOAP: Apoquel (f001), Apoquel (f009). Perch: configuration A: Apoquel (f060). Perch: configuration B: Apoquel (f016), Apoquel (f060).
+- **Pain and arthritis.** Product B: transcript: Rimadyl (f006), Rimadyl (f011), Galliprant (f021), meloxicam (f026). Product B: SOAP: Rimadyl (f006). Perch: configuration A: Librela (f018).
+- **Cardiology.** Product B: transcript: furosemide (f003), atenolol (f030). Perch: configuration A: Vetmedin (f017). Perch: configuration B: atenolol (f030).
+- **Opioids, sedatives and anesthetics.** Product B: transcript: Simbadol (f008), dexmedetomidine (f038). Product B: SOAP: isoflurane (f008). Perch: configuration A: Simbadol (f008). Perch: configuration B: Simbadol (f008).
+- **Neurology and behavior.** Product B: transcript: levetiracetam (f019).
+- **Endocrine and corticosteroids.** Product B: transcript: methimazole (f034), Zycortal (f043).
+- **Antifungals and topical antiseptics.** Product B: transcript: Malaseb (f023). Product B: SOAP: Malaseb (f023). Perch: configuration A: Malaseb (f023).
