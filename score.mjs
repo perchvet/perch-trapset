@@ -34,9 +34,11 @@ import fs from 'node:fs';
 
 const args = process.argv.slice(2);
 const verbose = args.includes('-v');
-const outputsPath = args.find((a) => !a.startsWith('-'));
+const ci = args.indexOf('--corpus');
+const corpusArg = ci >= 0 ? args[ci + 1] : null;
+const outputsPath = args.find((a, i) => !a.startsWith('-') && (ci < 0 || i !== ci + 1));
 if (!outputsPath) {
-  console.error('usage: node score.mjs <outputs.jsonl> [-v]');
+  console.error('usage: node score.mjs <outputs.jsonl> [-v] [--corpus <corpus.jsonl>]');
   process.exit(1);
 }
 
@@ -88,7 +90,7 @@ const pairPartner = (term) => {
   return null;
 };
 
-const corpus = readRows(`${here}corpus.jsonl`);
+const corpus = readRows(corpusArg || `${here}corpus.jsonl`);
 const corpusMap = new Map(corpus.map((r) => [r.id, r]));
 
 const outputs = readRows(outputsPath);

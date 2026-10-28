@@ -84,6 +84,15 @@ every one of them ten times the dictated dose; Perch charted none of either on t
 has one false offer of its own on a trap Product C never reached. Counts, clips, and every
 note are in that folder.
 
+## High stakes set, added 2026-10-28
+
+Ken Perry, MD, asked about the misses that change care: anticoagulants and insulin. The root set
+had one insulin clip and no anticoagulant. `high-stakes/` adds 30 blind clips built only from
+those two groups (22 names, 34 dictated drug instances, 10 traps), scored on Perch with its
+default list and with the 22 names added as a clinic list. Perch found 24 of the 34 on the
+default list and 32 with the clinic list, with no false offers on either run. Two misses dropped
+the letter that says which Humulin it was. Every clip, transcript and miss is in that folder.
+
 ## Results
 
 Raw counts. No percentage appears anywhere in this file, on purpose; see "What this is not"

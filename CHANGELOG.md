@@ -8,6 +8,12 @@
 - `drug-classes.json`: the class for every drug in `corpus.jsonl`.
 - `by-class.mjs`: regenerates that section from the per-clip rows in `ledger.md`
   (`node by-class.mjs`). No change to any count, clip, or `score.mjs`.
+- `high-stakes/`: 30 blind clips (20 dictations, 10 traps; ids c001 to c030) built only from
+  anticoagulants, antiplatelets and insulins, three Microsoft Edge neural voices, with Perch's
+  transcript and charted list for two runs (default list, and the 22 names as a clinic list),
+  a README and a per clip ledger. Asked for by Ken Perry, MD, on X.
+- `score.mjs`: a `--corpus <path>` option to score a set other than the root one. The root set
+  scores exactly as before.
 
 ## 1.1.0, 2026-10-20
 
