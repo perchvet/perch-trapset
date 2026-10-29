@@ -43,13 +43,30 @@ Run your own product on `clips/` and score its output the same way.
 |---|---|---|---|---|---|---|
 | Perch, default 66 name list | 30 | 34 | 24 | 10 | 0 | 0 |
 | Perch, the 22 names added as the clinic's own list | 30 | 34 | 32 | 2 | 0 | 0 |
+| Perch after the 2026-10-28 fix: the 22 names on the default list, the acoustic check extended to them, the insulin letter read from what was said | 30 | 34 | 33 | 1 | 0 | 0 |
 
 Perch here is its production speech engine with the term matcher on top, the same
 configuration as corpus 7. In the second row the 22 names were added to the list the way a
-clinic adds its own medicines in Perch's vocabulary panel. The acoustic drug check was not
-retrained for the new names, so that row measures the matcher alone. "Dose numbers nobody said"
+clinic adds its own medicines in Perch's vocabulary panel. The acoustic drug check did not
+score the new names in that run, so that row measures the matcher alone. "Dose numbers nobody said"
 is every number with a dose unit in the transcript that the clinician never said, the same
 measure as corpus 7.
+
+**The fix this set led to.** The 22 names went onto Perch's default list on 2026-10-28, with the
+acoustic drug check extended to them. Two rules came with them. Perch now reads the Humulin and
+Novolin letter only from the words after the name, so "Humulin, are" becomes Humulin R and a bare
+"Humulin" is never given a letter. And a note line that names Humulin or Novolin with no N or R
+gets a question under it until the vet picks one. On this set that run found 33 of the 34 drug
+instances with no false offers; the one miss is Lantus on c009 ("she failed Lantis last spring").
+Its output is `outputs/perch_fixed_2026-10-28.jsonl`. Across every other corpus Perch is benched
+on, the change added no false offer.
+
+`proof-video.mp4` is a screen recording of Perch's shipped build in a test clinic, with an AI
+voice dictating a phone callback about a diabetic cat. The vet says "Humulin R" for the insulin
+the owner gave by mistake, then "restart Humulin" with no letter. The note keeps the R that was
+said, the plan line with no letter gets a question, and the vet picks N. A second fix shipped the
+same day after an earlier take of this recording: the note writer had added an R the vet never
+said, so Perch now takes off any insulin letter the recording does not support and asks instead.
 
 No outside product was run on this set. Product B's trial and Product C's free account had both
 ended, so this folder scores Perch alone.
