@@ -84,7 +84,7 @@ every one of them ten times the dictated dose; Perch charted none of either on t
 has one false offer of its own on a trap Product C never reached. Counts, clips, and every
 note are in that folder.
 
-## High stakes set, added 2026-10-28
+## High stakes set, added in v1.2.0
 
 Ken Perry, MD, asked about the misses that change care: anticoagulants and insulin. The root set
 had one insulin clip and no anticoagulant. `high-stakes/` adds 30 blind clips built only from
@@ -189,8 +189,8 @@ under **CC BY 4.0**. `score.mjs` is licensed under the **MIT License**. Full tex
 
 ## Citation
 
-See `CITATION.cff`. In short: Talcoe LLC, "Perch trap set: 140 clips that catch AI scribes
-inventing drug names and doses," version 1.1.0, 2026. https://doi.org/10.5281/zenodo.23518182
+See `CITATION.cff`. In short: Talcoe LLC, "Perch trap set: 170 clips that catch AI scribes
+inventing drug names and doses," version 1.2.0, 2026. https://doi.org/10.5281/zenodo.23751570
 
 Archived on Zenodo (every version: https://doi.org/10.5281/zenodo.23113469). The same files are
 also on Hugging Face: https://huggingface.co/datasets/Talcoe/perch-trapset

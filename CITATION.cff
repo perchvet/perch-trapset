@@ -6,8 +6,11 @@ date-released: "2026-10-28"
 authors:
   - name: "Talcoe LLC"
 type: dataset
-doi: "10.5281/zenodo.23518182"
+doi: "10.5281/zenodo.23751570"
 identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23751570"
+    description: "Version 1.2.0"
   - type: doi
     value: "10.5281/zenodo.23518182"
     description: "Version 1.1.0"
