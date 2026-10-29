@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased, 2026-10-28
+## 1.2.0, 2026-10-28
 
 - `ledger.md`: a new "By drug class" section regrouping the root set's 84 dictated drug
   instances into ten therapeutic classes, with found and missed counts for all four outputs and

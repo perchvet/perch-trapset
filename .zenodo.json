@@ -1,9 +1,9 @@
 {
-  "title": "Perch trap set: 140 clips that catch AI scribes inventing drug names and doses",
+  "title": "Perch trap set: 170 clips that catch AI scribes inventing drug names and doses",
   "upload_type": "dataset",
-  "description": "Two blind test sets, 140 clips in all, for checking whether an AI clinical scribe charts a medication or a dose that was never dictated. The root set is 70 clips (45 veterinary dictations, 25 traps) in synthetic Kokoro text to speech, one voice per clip, with ground truth, a dependency free Node scorer, and a per clip ledger of Perch's own run and one outside comparison. Version 1.1.0 adds corpus7: a second 70 clip blind set by a different author in registers the first set never used, read by one Kokoro voice and two Microsoft Edge neural voices, the verbatim SOAP notes a second commercial veterinary scribe (Product C) produced for the 50 clips its free account accepted, and a ledger with a new measure, dose numbers in the note that nobody said. Raw counts, no percentage. This is Perch's own test, not an independent study.",
-  "version": "1.1.0",
-  "publication_date": "2026-10-20",
+  "description": "Three blind test sets, 170 clips in all, for checking whether an AI clinical scribe charts a medication or a dose that was never dictated. The root set is 70 clips (45 veterinary dictations, 25 traps) in synthetic Kokoro text to speech, one voice per clip, with ground truth, a dependency free Node scorer, and a per clip ledger of Perch's own run and one outside comparison. Version 1.1.0 added corpus7, a second 70 clip blind set with a measure for dose numbers in the note that nobody said. Version 1.2.0 adds high-stakes, 30 blind clips built only from anticoagulants, antiplatelets and insulins, asked for by an emergency physician. It carries Perch's transcripts and charted lists for three runs, a per clip ledger, the fix the set led to, and a screen recording of the shipped build. It also adds a by drug class section to the root ledger and a --corpus option to the scorer. Every result is a raw count and none is a percentage. Talcoe, the company that makes Perch, built and ran this test itself.",
+  "version": "1.2.0",
+  "publication_date": "2026-10-28",
   "creators": [
     {
       "name": "Talcoe LLC"
@@ -16,6 +16,8 @@
     "speech recognition",
     "hallucination",
     "benchmark",
-    "AI safety"
+    "AI safety",
+    "anticoagulants",
+    "insulin"
   ]
 }
