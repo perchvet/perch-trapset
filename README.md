@@ -195,6 +195,10 @@ inventing drug names and doses," version 1.2.0, 2026. https://doi.org/10.5281/ze
 Archived on Zenodo (every version: https://doi.org/10.5281/zenodo.23113469). The same files are
 also on Hugging Face: https://huggingface.co/datasets/Talcoe/perch-trapset
 
+The methods preprint for the first 70 clip run is on Zenodo: Usama and Nisar, "A 70 Clip Trap
+Set for Measuring Invented Drug Names in Veterinary AI Scribes," 2026.
+https://doi.org/10.5281/zenodo.24057958
+
 ---
 
 Talcoe LLC, makers of Perch. Questions: mo@talcoe.com
